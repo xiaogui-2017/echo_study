@@ -100,7 +100,6 @@ func main() {
 		return false, nil
 	}))
 
-
 	// Route level middleware
 	track := func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
