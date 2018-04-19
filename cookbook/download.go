@@ -15,7 +15,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.GET("/", func(c echo.Context) error {
-		return c.File("index.html")
+		return c.File("index1.html")
 	})
 	e.GET("/file", func(c echo.Context) error {
 		return c.File("echo.svg")

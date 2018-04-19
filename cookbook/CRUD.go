@@ -1,6 +1,5 @@
 package main
 
-
 import (
 	"net/http"
 	"strconv"
@@ -8,7 +7,6 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
-
 type (
 	user struct {
 		ID   int    `json:"id"`

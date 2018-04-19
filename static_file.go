@@ -6,6 +6,6 @@ import (
 
 func main() {
 	e := echo.New()
-	e.File("/", "public/index.html")
+	e.File("/", "public/index1.html")
 	e.Logger.Fatal(e.Start(":1323"))
 }

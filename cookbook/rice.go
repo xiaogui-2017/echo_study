@@ -11,7 +11,7 @@ func main() {
 	e := echo.New()
 	// the file server for rice. "xxx" is the folder where the files come from.
 	assetHandler := http.FileServer(rice.MustFindBox("app").HTTPBox())
-	// serves the index.html from rice
+	// serves the index1.html from rice
 	e.GET("/", echo.WrapHandler(assetHandler))
 
 	// servers other static files
